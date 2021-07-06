@@ -20,7 +20,7 @@ while True:
 		#lcd.lcd_display_string("		Activated", 3)
 		sleep(2)
 		#lcd.lcd_clear()
-		from signlanguage import fun_util
+		import fun_util
 		fun_util.recognize()
 	else:
 		#lcd.lcd_clear()
