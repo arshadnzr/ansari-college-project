@@ -14,19 +14,19 @@ lcd.lcd_clear()
 
 while True:
 	button_state=GPIO.input(10) 
-		if(button_state==0):
-			lcd.lcd_clear()
-			lcd.lcd_display_string("	Gesture mode", 2)
-			lcd.lcd_display_string("		Activated", 3)
-			sleep(2)
-			lcd.lcd_clear()
-			import fun_util
-			fun_util.recognize()
-		else:
-			lcd.lcd_clear()
-			lcd.lcd_display_string("	Speech mode", 2)
-			lcd.lcd_display_string("		Activated", 3)
-			sleep(2)
-			lcd.lcd_clear() 
-			import speech 
-			speech.rec()
+	if(button_state==0):
+		lcd.lcd_clear()
+		lcd.lcd_display_string("	Gesture mode", 2)
+		lcd.lcd_display_string("		Activated", 3)
+		sleep(2)
+		lcd.lcd_clear()
+		import fun_util
+		fun_util.recognize()
+	else:
+		lcd.lcd_clear()
+		lcd.lcd_display_string("	Speech mode", 2)
+		lcd.lcd_display_string("		Activated", 3)
+		sleep(2)
+		lcd.lcd_clear() 
+		import speech 
+		speech.rec()
