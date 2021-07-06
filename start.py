@@ -23,9 +23,10 @@ while True:
         import fun_util
         fun_util.recognize()
    else:
-        lcd.lcd_clear()
-   	    lcd.lcd_display_string("	Speech mode", 2)
-        lcd.lcd_display_string("		Activated", 3)
-        sleep(2)
-        lcd.lcd_clear() 
-        import speech speech.rec()
+		lcd.lcd_clear()
+		lcd.lcd_display_string("	Speech mode", 2)
+		lcd.lcd_display_string("		Activated", 3)
+		sleep(2)
+		lcd.lcd_clear() 
+		import speech 
+		speech.rec()
